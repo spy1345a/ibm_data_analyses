@@ -1,86 +1,69 @@
-# 📓 Jupyter Notebook Setup & Usage Guide
+Pyter Notebook Usage Guide
 
-This repository contains Python code that is intended to be run using **Jupyter Notebook**.  
-Follow the steps below to set up your environment and execute the code successfully.
+This repository contains Python code designed to be executed using **Jupyter Notebook**.  
+Follow the instructions below to set up your environment and run the provided code correctly.
 
 ---
 
 ## 🧰 Requirements
-
-Make sure you have **Python 3.8+** installed.
+Make sure you have Python 3.8+ installed.
 
 Required Python libraries:
-- numpy
-- pandas
-- scikit-learn (if using ML code)
-- matplotlib (optional)
-- jupyter
 
----
+numpy
+pandas
+scikit-learn (if using ML code)
+matplotlib (optional)
+jupyter
 
-## 🚀 Installation Steps
 
-### 1️⃣ Create a Virtual Environment (Optional but Recommended)
+## Installation
 
+### 1. (Optional) Create a Virtual Environment
 ```bash
 python -m venv venv
+```
 Activate it:
-
 Windows
-
-bash
-Copy code
+```bash
 venv\Scripts\activate
+```
+
 Linux / macOS
-
-bash
-Copy code
+```bash
 source venv/bin/activate
-2️⃣ Install Required Packages
-bash
-Copy code
-pip install numpy pandas scikit-learn matplotlib jupyter
-▶️ Running Jupyter Notebook
-Start Jupyter Notebook using:
+```
 
-bash
-Copy code
+2. Install Required Package
+```bash
+pip install jupyter numpy pandas scikit-learn matplotlib
+```
+Running Jupyter Notebook
+Start Jupyter Notebook with:
+```bash
 jupyter notebook
-This will open Jupyter in your browser.
+```
+Your browser will open the Jupyter interface automatically.
+Using the Code
+Open the provided .ipynb file
+or
+Create a new notebook (New → Python 3)
+Paste the given code into a cell
+Run cells using Shift + Enter
 
-📂 Using the Given Code
-Open the .ipynb file from the Jupyter interface
-OR
+## ⚠️ Run cells in order to avoid dependency errors.
 
-Create a new notebook:
-
-Click New → Python 3
-
-Copy and paste the given code into a cell
-
-Press Shift + Enter to run each cell
-
-📝 Notes
-Run cells in order to avoid errors
-
-If you modify the code, re-run dependent cells
-
-Make sure all required libraries are installed before execution
-
-🛠 Common Issues
-ModuleNotFoundError
-bash
-Copy code
-pip install <missing-package>
-Jupyter not opening?
-Try:
-
-bash
-Copy code
+Common Issues
+Missing Module Error
+```bash
+pip install <package-name>
+Jupyter Does Not Launch
+```
+```bash
 python -m notebook
-📌 Recommended Environment
+```
+
+Recommended Setup
 OS: Windows / Linux
-
 Python: 3.8+
-
-Editor: Jupyter Notebook / JupyterLab
+Environment: Virtualenv (optional but recommended          )
